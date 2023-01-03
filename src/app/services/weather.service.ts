@@ -11,6 +11,6 @@ export class WeatherService {
   constructor(private http: HttpClient) { }
 
   getWeatherData(cityName: string): Observable<RootObject>{
-    return this.http.get<RootObject>("https://api.weatherapi.com/v1/current.json?key=c14c5056aad34521ae085837221209&"+"q="+cityName);
+    return this.http.get<RootObject>("https://api.weatherapi.com/v1/current.json?key=907e5e572ad040f48df91032230201&"+"q="+cityName);
   }
 }
